@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Digital Dungeon</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark-mode">
+  <div class="title-screen">
+    <h1 class="logo-title">DIGITAL DUNGEON</h1>
+    <p class="enter-text">PRESS ENTER</p>
+  </div>
 
-  <section id="entry-screen">
-    <h1>DIGITAL DUNGEON</h1>
-    <a href="hub.html">ENTER</a>
-  </section>
+  <script>
+    // Enter key + click event
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        window.location.href = 'hub.html';
+      }
 
+      // Arrow key detection (future expansion)
+      if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
+        console.log(`Arrow key pressed: ${e.key}`);
+        // Add animation/movement/game logic later
+      }
+    });
+
+    document.querySelector('.enter-text').addEventListener('click', function() {
+      window.location.href = 'hub.html';
+    });
+  </script>
 </body>
 </html>

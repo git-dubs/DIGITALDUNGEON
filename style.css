@@ -1,27 +1,35 @@
-body {
+body.dark-mode {
+  background-color: #000;
+  color: #39FF14;
+  font-family: 'Courier New', monospace;
   margin: 0;
-  font-family: monospace;
-  background: #f4f4f4;
-  text-align: center;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
-section {
-  height: 100vh;
+.title-screen {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  text-align: center;
 }
 
-h1 {
-  font-size: 2em;
+.logo-title {
+  font-size: 10vw;
+  margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  display: inline-block;
+.enter-text {
+  font-size: 2rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.2; }
+  100% { opacity: 1; }
 }

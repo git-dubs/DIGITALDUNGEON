@@ -135,6 +135,28 @@ body.dungeon-frame.noscroll {
 
 
 /* === MURALS PAGE === */
+
+.cielito-link:link,
+.cielito-link:visited {
+  color: #39FF14; /* Neon green */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.cielito-link:hover,
+.cielito-link:active {
+  color: #ffffff;
+  text-shadow: 0 0 6px #39FF14;
+}
+
+.mural-gif {
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid #A020F0;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
 .murals {
   background-color: #000;
   color: #A020F0;
